@@ -17,7 +17,7 @@ options.add_argument("--disable-infobars")
 options.add_argument("--disable-dev-shm-usage")
 
 s = Service(executable_path='C:/python/chromedriver.exe')
-driver = webdriver.Chrome(options=options)
+driver = webdriver.Chrome(service=s)
 def set_up():
     print(f'Launch {locators.aos_home_page_url} ')
     print('--------------------~*~---------------------')
